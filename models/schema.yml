@@ -1,6 +1,12 @@
 version: 2
 
 models:
+  - name: honeydew_analysis_view
+    columns:
+      - name: "payments.payment_method"
+      - name: "customers.arpu"
+      - name: "payments.total_amount"
+
   - name: arpu_analysis
     description: by payment method - average customer revenue and total revenue
   
