@@ -32,7 +32,7 @@ customer_payments as (
 
 ),
 
--- !!! note building here per each payment method the distinct customers in it
+-- note building here per each payment method the distinct customers in it
 -- this is done to calc avg revenue per customer per payment methods
 -- if just joining payments -> orders -> customer_payments then there is row duplication 
 -- (same customer appears few times per payment method) if an order is split between payment methods, causing skew!
