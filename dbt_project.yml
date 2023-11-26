@@ -24,3 +24,6 @@ models:
       materialized: table
       staging:
         materialized: view
+
+vars:
+  honeydew_workspace: 'jaffle_shop_demo'

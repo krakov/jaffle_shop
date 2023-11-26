@@ -1,29 +1,7 @@
 version: 2
 
 models:
-  - name: honeydew_analysis_view
-    columns:
-      - name: "payments.payment_method"
-      - name: "customers.arpu"
-      - name: "payments.total_amount"
-
-  - name: arpu_analysis
-    description: by payment method - average customer revenue and total revenue
-  
-    columns:
-      - name: payment_method
-      - name: total_amount
-      - name: arpu
-
-  - name: payments_perspective
-    description: by payment method - average customer revenue and total revenue
-  
-    columns:
-      - name: payment_method
-      - name: total_amount
-      - name: order_date
-
-  - name: customers
+  - name: customers_orig
     description: This table has basic information about a customer, as well as some derived facts based on a customer's orders
 
     columns:
@@ -51,7 +29,7 @@ models:
       - name: total_order_amount
         description: Total value (AUD) of a customer's orders
 
-  - name: orders
+  - name: orders_orig
     description: This table has basic information about orders, as well as some derived facts based on payments
 
     columns:
